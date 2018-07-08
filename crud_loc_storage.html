@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Local Storag Example</title>
+    <script src="main.js">
+    </script>
+</head>
+
+<body onload="UcitajStorage()">
+    <div class="container mx-auto mt-2 border border-dark p-4">
+        <div class="row pb-4">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" name="ilp" id="ime" placeholder="Ime">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" name="ilp" id="prezime" placeholder="Prezime">
+            </div>
+            <div class="col">
+                <input type="email" class="form-control form-control-sm" name="ilp" id="email" placeholder="Email">
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="AddInStorage()">Dodaj</button>
+        </div>
+        <div class="row pb-4" id="editor">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" name="ilp" id="Eime" placeholder="Ime">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" name="ilp" id="Eprezime" placeholder="Prezime">
+            </div>
+            <div class="col">
+                <input type="email" class="form-control form-control-sm" name="ilp" id="Eemail" placeholder="Email">
+            </div>
+            <button class="btn btn-primary btn-sm" id="EditBtn">Edit</button>
+        </div>
+        <div class="row pb-1 text-left">
+            <div class="col">
+                <label for="ime">Ime</label>
+            </div>
+            <div class="col">
+                <label for="prezime">Prezime</label>
+            </div>
+            <div class="col">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <hr>
+        <div id="load">
+        </div>
+        <button class="btn btn-danger" onclick="DeleteAllOsobe()" id="DltAll">Delete All</button>
+    </div>
+</body>
+
+</html>
